@@ -25,10 +25,10 @@ do
         # 卸载旧的挂载点
         if [ -e $mount_point ]; then
             umount $mount_point
-        fi
-        if [ $? -ne 0 ]; then
-            echo "卸载失败: $device_node     $mount_point"
-            continue
+            if [ $? -ne 0 ]; then
+                echo "卸载失败: $device_node     $mount_point"
+                continue
+            fi
         fi
         # 新建新的挂载点
         if [ ! -e $new_mount_point ]; then
