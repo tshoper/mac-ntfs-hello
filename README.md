@@ -1,3 +1,9 @@
+update on 2015-05-17
+
+貌似Yosemite更新到10.10.3之后，无论是mount\_ntfs命令还是mount命令，都不能以rw权限挂载NTFS驱动器了。
+
+:(
+
 # mac-ntfs-hello
 Mac OS X平台以读写权限挂载NTFS驱动器
 

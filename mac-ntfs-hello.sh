@@ -37,6 +37,7 @@ do
 
         # 挂载NTFS
         mount_ntfs -o rw,nobrowse $device_node $new_mount_point
+        # mount -t ntfs -o nosuid,noowners -w -v /dev/disk2s1 /common/wd/DATA1
         if [ $? -eq 0 ]; then
             echo "挂载成功: $device_node --> $new_mount_point"
         else
