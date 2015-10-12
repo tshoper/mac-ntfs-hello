@@ -2,7 +2,7 @@
 # 以读写权限挂载NTFS驱动器
 # Mac OS X平台
 # 作者: 祁冰 <qbhust@gmail.com>
-# 时间: 2015年 4月29日 星期三 01时44分42秒 CST
+# 时间: 2015年 4月29日 星期三 01时44分42秒 CST 
 
 if [ $UID -ne 0 ]; then
     echo "需要root权限才能以读写权限挂载NTFS驱动器呦！"
